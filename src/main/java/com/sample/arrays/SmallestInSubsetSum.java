@@ -19,8 +19,9 @@ public class SmallestInSubsetSum {
 
 		// Traverse the array and increment 'res' if arr[i] is
 		// smaller than or equal to 'res'.
-		for (int i = 0; i < n && arr[i] <= res; i++)
+		for (int i = 0; i < n && arr[i] <= res; i++) {
 			res = res + arr[i];
+		}
 
 		return res;
 	}

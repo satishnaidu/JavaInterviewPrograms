@@ -13,7 +13,7 @@ public class PrintABC {
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
 
 		ExecutorService executorService = Executors.newFixedThreadPool(5);
-		List<Callable<String>> callables = new ArrayList<>();
+		List<Callable<String>> callables = new ArrayList<Callable<String>>();
 		Callable<String> a = new MyThread2("A");
 		Callable<String> b = new MyThread2("B");
 		Callable<String> c = new MyThread2("C");
@@ -38,7 +38,6 @@ class MyThread2 implements Callable<String> {
 		this.name = name;
 	}
 
-	@Override
 	public String call() throws Exception {
 		System.out.println(Thread.currentThread().getName());
 		return name;

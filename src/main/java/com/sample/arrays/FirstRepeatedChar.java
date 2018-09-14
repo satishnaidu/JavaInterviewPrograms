@@ -19,7 +19,7 @@ public class FirstRepeatedChar {
 	}
 
 	public int withLinkedHashMap(int[] n) {
-		Map<Integer, Integer> map = new LinkedHashMap<>();
+		Map<Integer, Integer> map = new LinkedHashMap<Integer, Integer>();
 		for (int i = 0; i < n.length; i++) {
 			if (map.containsKey(n[i])) {
 				map.put(n[i], map.get(n[i]) + 1);
@@ -39,8 +39,8 @@ public class FirstRepeatedChar {
 	}
 
 	public int withLikedHashSet(int[] n) {
-		Set<Integer> repeat = new HashSet<>();
-		List<Integer> norepeat = new ArrayList<>();
+		Set<Integer> repeat = new HashSet<Integer>();
+		List<Integer> norepeat = new ArrayList<Integer>();
 
 		for (int i = 0; i < n.length; i++) {
 

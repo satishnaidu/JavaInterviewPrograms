@@ -41,7 +41,7 @@ public class MultipleDuplicates {
 
 	public void duplicateWithSet(int[] n) {
 
-		Set<Integer> set = new LinkedHashSet<>();
+		Set<Integer> set = new LinkedHashSet<Integer>();
 		for (int i = 0; i < n.length; i++) {
 			if (set.add(n[i]) == false) {
 				System.out.println("Duplicate: " + n[i]);
@@ -50,7 +50,7 @@ public class MultipleDuplicates {
 	}
 
 	public void duplicateWithHashMap(int[] n) {
-		Map<Integer, Integer> map = new HashMap<>();
+		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 
 		for (int i = 0; i < n.length; i++) {
 

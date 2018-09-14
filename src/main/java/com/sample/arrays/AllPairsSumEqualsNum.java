@@ -16,7 +16,7 @@ public class AllPairsSumEqualsNum {
 
 		for (int i = 0; i < array.length; i++) {
 			for (int j = 0; j < array.length; j++) {
-				if (i + j == sum) {
+				if (array[i] + array[j] == sum) {
 					System.out.printf("(%d, %d) %n", i, j);
 				}
 			}

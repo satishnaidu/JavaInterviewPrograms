@@ -15,7 +15,7 @@ public class FirstRepeated {
 	// Time complexity: O(n)
 	public int firstRepeated(int[] arr) {
 
-		Set<Integer> set = new HashSet<>();
+		Set<Integer> set = new HashSet<Integer>();
 
 		int min = -1;
 		for (int i = arr.length - 1; i >= 0; i--) {
